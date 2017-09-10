@@ -109,7 +109,7 @@ module.exports = {
         'no-new': 2,
         'no-octal-escape': 2,
         'no-octal': 2, // eslint:recommended
-         // TODO: should we require this?
+        // TODO: should we require this?
         'no-param-reassign': [2, { props: false }],
         'no-proto': 2,
         'no-redeclare': [2, { builtinGlobals: true }], // eslint:recommended
@@ -142,7 +142,7 @@ module.exports = {
         // Strict Mode
         // http://eslint.org/docs/rules/#strict-mode
         // -----------------------------------------
-         // TODO: should we require this?
+        // TODO: should we require this?
         strict: [1, 'global'],
 
         // Variables
@@ -159,7 +159,7 @@ module.exports = {
         'no-undef': 2, // eslint:recommended
         'no-undefined': 0,
         'no-unused-vars': [2, { vars: 'all', args: 'none' }], // eslint:recommended
-         // TODO: doesn't work well because we enforce object-shorthand: never, maybe dont check for functions?
+        // TODO: doesn't work well because we enforce object-shorthand: never, maybe dont check for functions?
         'no-use-before-define': [1, { functions: true, classes: true }],
 
         // Node.js and CommonJS
@@ -247,7 +247,7 @@ module.exports = {
         'multiline-ternary': 0,
         'new-cap': 2,
         'new-parens': 2,
-         // TODO: should we require this?
+        // TODO: should we require this?
         'newline-after-var': 0,
         // TODO: a blank line should be required after blocks and before the next statement,
         // not before any expression
