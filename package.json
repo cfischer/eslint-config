@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "ESLint shareable config",
   "license": "Apache-2.0",
-  "repository": "cfischer/eslint-config-cfischer",
+  "repository": "cfischer/eslint-config",
   "author": "cfischer",
   "engines": {
     "node": ">=0.10.0"
