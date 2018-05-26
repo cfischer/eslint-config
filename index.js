@@ -1,11 +1,12 @@
 /* eslint no-inline-comments: 0 */
 /* global module */
+'use strict';
 
 module.exports = {
   env: {
     browser: false,
     node: false,
-    es6: true,
+    es6: true
   },
   rules: {
     // The rules below are listed in the order they appear on the eslint
@@ -52,7 +53,7 @@ module.exports = {
       requireReturnType: true,
       matchDescription: '.+\\.',
       requireParamDescription: false,
-      requireReturnDescription: false,
+      requireReturnDescription: false
     }],
     'valid-typeof': 2, // eslint:recommended
 
@@ -91,7 +92,7 @@ module.exports = {
       boolean: true,
       number: true,
       string: true,
-      allow: ['!!'],
+      allow: ['!!']
     }],
     'no-implicit-globals': 2,
     'no-implied-eval': 2,
@@ -130,7 +131,7 @@ module.exports = {
     'no-void': 2,
     'no-warning-comments': [1, {
       terms: ['fix'],
-      location: 'start',
+      location: 'start'
     }],
     'no-with': 2,
     radix: 0,
@@ -181,7 +182,7 @@ module.exports = {
     'block-spacing': [2, 'always'],
     'brace-style': [2, '1tbs', { allowSingleLine: false }],
     camelcase: [2, { properties: 'always' }],
-    'comma-dangle': [2, 'always-multiline'],
+    'comma-dangle': [2, 'never'],
     'comma-spacing': [2, { before: false, after: true }],
     'comma-style': [2, 'last'],
     'computed-property-spacing': [2, 'never'],
@@ -195,10 +196,9 @@ module.exports = {
     'id-length': [1, {
       min: 3,
       properties: 'never',
-      exceptions: ['i', 'x', 'y', 'z', 'e', 'p', 'q', '_', '$', 'cb', 'vm', 'fs', 'co', 'ws', 'id'],
+      exceptions: ['i', 'x', 'y', 'z', 'e', 'p', 'q', '_', '$', 'cb', 'vm', 'fs', 'co', 'ws', 'id']
     }],
     'id-match': 0,
-    // TODO: think about parameter alignment
     indent: [2, 2, {
       SwitchCase: 1,
       VariableDeclarator: { var: 1, let: 1, const: 1 },
@@ -208,7 +208,7 @@ module.exports = {
       FunctionExpression: { parameters: 1, body: 1 },
       CallExpression: { arguments: 1 },
       ArrayExpression: 1,
-      ObjectExpression: 1,
+      ObjectExpression: 1
       // ImportDeclaration: 1,
       // flatTernaryExpressions: true
     }],
@@ -216,11 +216,11 @@ module.exports = {
     'key-spacing': [2, {
       beforeColon: false,
       afterColon: true,
-      mode: 'strict',
+      mode: 'strict'
     }],
     'keyword-spacing': [2, {
       before: true,
-      after: true,
+      after: true
     }],
     'line-comment-position': [2, 'above'],
     'linebreak-style': [2, 'unix'],
@@ -239,7 +239,7 @@ module.exports = {
     'max-len': [2, {
       code: 120,
       tabWidth: 2,
-      ignoreUrls: true,
+      ignoreUrls: true
     }],
     'max-lines': 0,
     'max-nested-callbacks': 0,
@@ -281,7 +281,7 @@ module.exports = {
     'one-var': [2, {
       var: 'never',
       let: 'never',
-      const: 'never',
+      const: 'never'
     }],
     'operator-assignment': 0,
     'operator-linebreak': 0,
@@ -294,8 +294,8 @@ module.exports = {
         FunctionDeclaration: true,
         MethodDefinition: true,
         ClassDeclaration: true,
-        ArrowFunctionExpression: false,
-      },
+        ArrowFunctionExpression: false
+      }
     }],
     'semi-spacing': [2, { before: false, after: true }],
     semi: [2, 'always'],
@@ -313,7 +313,7 @@ module.exports = {
     // ECMAScript 6
     // http://eslint.org/docs/rules/#ecmascript-6
     // ------------------------------------------
-    'arrow-body-style': [2, 'as-needed'],
+    'arrow-body-style': 0,
     'arrow-parens': [2, 'always'],
     'arrow-spacing': [2, { before: true, after: true }],
     'constructor-super': 2, // eslint:recommended
@@ -342,6 +342,6 @@ module.exports = {
     'sort-imports': 0,
     'symbol-description': 0,
     'template-curly-spacing': [2, 'never'],
-    'yield-star-spacing': [2, 'after'],
-  },
+    'yield-star-spacing': [2, 'after']
+  }
 };
